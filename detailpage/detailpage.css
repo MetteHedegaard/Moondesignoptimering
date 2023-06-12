@@ -1,0 +1,426 @@
+/* Font overskrifter bebas neue*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+}
+
+.desktopnav {
+  display: none;
+}
+
+/* logo */
+.logo {
+    background-color: #FDFDFD;
+}
+.logo img {
+    max-width: 100px;
+    text-align: left;
+}
+
+/* https://www.w3schools.com/howto/howto_js_mobile_navbar.asp credit for burgermenu*/
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #151515;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu - kun linksene frontpage (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    text-align: center;
+    font-family: "bebas neue";
+    /* containernen som er sort */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* boksene som linksene ligger indeni */
+  #myLinks a {
+      padding: 10px;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      border-radius: 50px;
+      background-color: #6A8A9B;
+  }
+  
+  /* Style navigation menu links - alle klikbare links logo , frontpage etc*/
+  .topnav a {
+    color: #FDFDFD;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu - de 3 streger */
+  .topnav a.icon {
+   color: #151515;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 35px;
+  }
+
+  /* tilbage link */
+  .backbtn p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-align: right;
+    padding: 15px;
+    margin: 0%;
+  }
+
+  .backbtn a {
+    text-decoration: none;
+    color: #151515;
+  }
+
+  .backbtn a:hover {
+    color: #6A8A9B;
+  }
+
+  #main-detailpage{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*item picture*/
+  .items img{
+      width: 100%;
+  }
+
+
+    /*slideshow
+    credit https://www.w3schools.com/howto/howto_js_slideshow.asp */
+  * {box-sizing:border-box}
+
+  /* Slideshow container */
+  .items {
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #6A8A9B;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 10%;
+  }
+  
+  .active, .dot:hover {
+    background-color: #EFEFEF;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+ /* slideshopw slut */
+
+
+.item-overskrift {
+    font-family: "Bebas Neue";
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.item-underoverskrift1 h2{
+    font-family: "Bebas Neue";
+    font-size: 2rem;
+    margin: 5%;
+}
+
+.item-underoverskrift1 p {
+    margin: 5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.size h2{
+    font-family: "Bebas Neue";
+    font-size: 2rem;
+    margin: 5%;
+}
+
+.size p {
+    margin: 5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.size .btn {
+  background: transparent;
+  border: none;
+ margin-left: 5%;
+ font-size: 1.25rem;
+ margin-bottom: 10%;
+ font-weight: bolder;
+}
+
+input[type="radio"]{
+display: none;
+}
+
+input#sizeS:checked[type="radio"]:checked + label {
+color: #6A8A9B;
+}
+
+input#sizeM:checked + label {
+ color: #6A8A9B;
+}
+
+
+input#sizeL:checked + label {
+  color: #6A8A9B;
+}
+
+
+input#sizeTailor:checked + label {
+color: #6A8A9B;
+}
+
+label {
+display: inline-block;
+padding: 10px;
+color: black;
+cursor: pointer;
+margin: 2%;
+}
+
+ /* knap credit
+ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_fade3 */
+
+ .button-center {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.button-center a{
+   text-decoration: none;
+}
+
+.button {
+    display: block;
+   border-radius: 50px;
+ color: #FDFDFD;
+ text-align: center;
+ transition-duration: 0.4s;
+ cursor: pointer;
+ padding: 0.1px;
+ width: 200px;
+ margin-top: 15px;
+ margin-bottom: 50px;
+}
+
+.button {
+   background-color: #6A8A9B; 
+   color: #FDFDFD; 
+   border: 2px solid #6A8A9B;
+ }
+ 
+ .button:hover {
+   background-color:#AAC3D3;
+ }
+
+ .button p{
+     font-size: 1rem;
+     font-family: 'bebas Neue';
+ }
+
+
+
+   /*footer*/
+   .grid-footer {
+    display: grid;
+    align-items: end;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .footer {
+    background-color: #EFEFEF; 
+  }
+  
+  .footer h3{
+    color: #151515;
+    padding: 20px 5% 0 5%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  }
+  
+  .footer p {
+  font-family: 'Roboto', sans-serif;
+  padding: 5px 5%;
+  margin: 0;
+  }
+  
+   /* SoMe icons  */
+  .icons img {
+    width: 40px;
+  }
+  
+  .icons {
+    text-align: right;
+    margin-top: -60px;
+    margin-right: 5%;
+  }
+
+
+
+  @media screen and (min-width: 768px) {
+.topnav {
+  display: none;
+}
+
+#main-detailpage{
+  flex-direction: row;
+}
+
+.desktopnav {
+  display: block;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#myLinks a {
+  background: none;
+  text-decoration: transparent;
+  color: #151515;
+  font-size: 1.2rem;
+}
+
+#myLinks a:hover {
+  color: #6A8A9B;
+}
+
+
+    .item-overskrift {
+      font-size: 4rem;
+    }
+
+    .items img{
+      width: 25vh;
+      
+  }
+
+.item-underoverskrift1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.size {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: start;
+}
+
+
+.item-overskrift {
+  font-family: "Bebas Neue";
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.item-underoverskrift1 h2{
+  font-family: "Bebas Neue";
+  font-size: 2rem;
+  margin: 5%;
+}
+
+.item-underoverskrift1 p {
+  margin: 5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.size h2{
+  font-family: "Bebas Neue";
+  font-size: 2rem;
+  margin: 5%;
+}
+
+.size p {
+  margin: 5%;
+  font-family: 'Roboto', sans-serif;
+}
+.size .btn {
+  font-size: 1.5rem;
+}
+
+  }
+
+  @media screen and (min-width: 800px) {
+    .items img{
+      width: 28vh;
+      
+  }
+}
+
+  @media screen and (min-width: 1200px) {
+    .item-overskrift {
+      font-size: 5rem;
+    }
+
+    .items img{
+      width: 70vh;
+      
+  }
+
+    #myLinks a {
+      font-size: 1.5rem;
+    }
+
+  }
