@@ -1,0 +1,250 @@
+
+/* Font overskrifter bebas neue*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+}
+
+.desktopnav {
+  display: none;
+}
+
+/* logo */
+.logo {
+    background-color: #FDFDFD;
+}
+.logo img {
+    max-width: 100px;
+    text-align: left;
+}
+
+/* https://www.w3schools.com/howto/howto_js_mobile_navbar.asp credit for burgermenu*/
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #151515;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu - kun linksene frontpage (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    text-align: center;
+    font-family: "bebas neue";
+    /* containernen som er sort */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* boksene som linksene ligger indeni */
+  #myLinks a {
+      padding: 10px;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      border-radius: 50px;
+      background-color: #6A8A9B;
+  }
+  
+  /* Style navigation menu links - alle klikbare links logo , frontpage etc*/
+  .topnav a {
+    color: #FDFDFD;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu - de 3 streger */
+  .topnav a.icon {
+   color: #151515;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 35px;
+  }
+
+
+
+h1 {
+    text-align: center;
+    font-family: "bebas neue";
+    font-size: 3rem;
+}
+
+/*  section collection1*/
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 0 5% 0 5%;
+}
+
+.grid1 img {
+    width: 100%;
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+}
+.grid1 img:hover{
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+
+.grid1 p {
+    color: #151515;
+    display: block; 
+    text-align: center;
+}
+
+
+.grid1 a {
+    text-decoration: none;
+}
+
+ /*  section2 collection2*/
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 0 5% 0 5%;
+}
+
+.grid2 img {
+    width: 100%;
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+}
+.grid2 img:hover{
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+.grid2 p {
+    color: #151515;
+    display: block; 
+    text-align: center;
+}
+
+ /*  collection pages */
+
+ .numbers {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     margin: 5% 0 5% 0;
+ }
+
+.numbers a {
+    display: flex;
+    font-size: 3rem;
+    font-family: "bebas neue";
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #151515;
+}
+
+.hide {
+    display: none;
+}
+
+ /*footer*/
+ .grid-footer {
+  display: grid;
+  align-items: end;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer {
+  background-color: #EFEFEF; 
+}
+
+.footer h3{
+  color: #151515;
+  padding: 20px 5% 0 5%;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.footer p {
+font-family: 'Roboto', sans-serif;
+padding: 5px 5%;
+margin: 0;
+}
+
+ /* SoMe icons  */
+.icons img {
+  width: 40px;
+}
+
+.icons {
+  text-align: right;
+  margin-top: -60px;
+  margin-right: 5%;
+}
+
+@media screen and (min-width: 768px) {
+.topnav {
+  display: none;
+}
+
+
+.desktopnav {
+  display: block;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#myLinks a {
+  background: none;
+  text-decoration: transparent;
+  color: #151515;
+  font-size: 1.2rem;
+}
+
+#myLinks a:hover {
+  color: #6A8A9B;
+}
+
+
+
+h1 {
+  font-size: 4rem;
+}
+
+  .grid1 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+  padding: 0 5% 0 5%;
+}
+
+.grid2 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+  padding: 0 5% 0 5%;
+}
+
+.numbers a {
+  font-size: 5rem;
+}
+
+  }
+ 
+
+  @media screen and (min-width: 1200px) {
+    h1 {
+      font-size: 5rem;
+    }
+
+    #myLinks a {
+      font-size: 1.5rem;
+    }
+  }
+  
