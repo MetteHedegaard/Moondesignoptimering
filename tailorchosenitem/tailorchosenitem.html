@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailorchosenitem.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.png">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--https://www.w3schools.com/howto/howto_js_mobile_navbar.asp credit burgermenu-->
+        <!-- Top Navigation Menu -->
+<div class="topnav">
+    <a href="../index.html" class="logo"><img src="../logo.png" alt=""></a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="../index.html">Frontpage</a>
+      <a href="../Collection/collection.html">Collection</a>
+      <a href="#Tailor">Tailor</a>
+      <a href="#About">About</a>
+      <a href="#Contant">Contact</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+    </nav>
+
+    <nav class="desktopnav">
+        <a href="../index.html" class="logo"><img src="../logo.png" alt=""></a>
+        <div id="myLinks">
+            <a href="../index.html">Frontpage</a>
+            <a href="../Collection/collection.html">Collection</a>
+            <a href="#Tailor">Tailor</a>
+            <a href="#About">About</a>
+            <a href="#Contant">Contact</a>
+          </div>
+    </nav>
+
+        <!-- tilbage link til detail page siden -->
+        <section class="backbtn"><a href="../detailpage/"><p>Back</p></a></section>
+
+ <!-- text til tailor side-->
+ <div class="flexbox1">
+<section class="tailor">
+<h2>Tailor</h2>
+<p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+</p>
+</section>
+
+<!-- h2 collection + dropdown 
+credit https://www.w3schools.com/howto/howto_css_dropdown.asp-->
+<section class="choosecollection">
+<h2>Collections</h2>
+<div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+        <!-- a tagget skal lige ændres 
+            så den ene går til kollektion 1 og den anden til kollektion2 -->
+      <a href="../Collection/collection.html">Spring 2023</a>
+      <a href="../Collection/collection2.html">Summer 2022</a>
+    </div>
+  </div>
+</section>
+</div>
+
+
+
+    <!--  https://www.youtube.com/watch?v=gzXyRa7jwk4&ab_channel=EasyTutorials
+    'this' refere til div+img
+id="imgOne" onclick="colorFunction(this)" -->
+
+<section>
+    <div class="gridtailor">
+        <div><img src="../red.pictures/redkiss1.png" alt=""></div>
+        <!-- a-tag føre til detailpage -->
+        <a href="../detailpage/detailpage.html">
+            <div><img src="../red.pictures/whitepearl1.png" alt=""></div>
+        </a>
+
+        <div><img src="../red.pictures/littleblack1.png" alt=""></div>
+        <div class="pic4"><img src="../red.pictures/TheFlower1.png" alt=""></div>
+    </div>
+</section>
+
+
+  <!-- video - controls er baren, hvor man selv kan stoppe/play video -->
+  <div class="flexbox2">
+<section class="video">
+<h2>How to measure yourself</h2>
+<video width="400" height="240" autoplay controls>
+    <source src="../video_measurement.mp4" type="video/mp4">
+  </video>
+</section>
+
+  <!-- measurement HJÆLP til boks størrelse
+credit https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_input_test -->
+<section class="measurement">
+    <form action="form"></form>
+<h3>Measurement Bust</h3>
+<input class="textbox" type="text" id="fname" name="fname"><br><br>
+<h3>Measurement waist </h3>
+<input class="textbox" type="text" id="fname" name="fname"><br><br>
+<h3>Measurement hips</h3>
+<input class="textbox" type="text" id="lname" name="lname"><br><br>
+</form>
+</div>
+
+ <!-- næste knap -->
+<section class="button-center">
+
+    <a href="../selecteditem/selecteditem.html">
+        <button class="button"><p>Next</p></button>
+    </a>
+    </section>
+
+</section>
+
+ <!-- Footer -->
+ <footer class="footer">
+    <div class="grid-footer">
+    <div>
+        <p>+84-24-XXXX-XXXX</p>
+        <p>moondesign@email.vn</p>
+        <p>Addresevej 194</p>
+    </div>
+    <br>
+    <div>
+        <h3>Opening times</h3>
+    <p>Monday 10am - 18pm</p>
+    <p>Tuesday 10am - 18pm</p>
+    <p>Wedensday 10am - 18pm</p>
+    <p>Closed 10am - 18pm</p>
+    <p>Friday 10am - 18pm</p>
+    <p>Saturday 10am - 18pm</p></div>
+
+    <div class="icons">
+        <a href="https://www.facebook.com/moon.desginer">  <img src="../facebook.svg" alt=""></a>
+        <a href="https://www.instagram.com/moondesign.hanoi/"> <img src="../insta.svg" alt=""></a>
+      
+        <img src="../tiktok.svg" alt="">
+    </div>
+</div>
+</footer>
+<script src="tailorchosenitem.js"></script>
+</body>
+</html>
